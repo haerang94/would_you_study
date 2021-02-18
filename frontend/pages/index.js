@@ -6,10 +6,6 @@ import { server } from "../config";
 export default function Home({ articles }) {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>webDev haerang</title>
-        <meta name="keywords" content="web development, programming" />
-      </Head>
       <ArticleList articles={articles} />
     </div>
   );
