@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/Link";
+import { server } from "../../../config";
 const Article = ({ article }) => {
   //   const router = useRouter();
   //   const { id } = router.query;
@@ -17,7 +18,7 @@ const Article = ({ article }) => {
     /* This is an article {article.id}</>; */
   }
 };
-
+//  빌드와 상관없이 매 요청마다 데이터를 서버에서 가져온다
 // export const getServerSideProps = async (context) => {
 //   const res = await fetch(
 //     `https://jsonplaceholder.typicode.com/posts/${context.params.id}`
@@ -29,10 +30,9 @@ const Article = ({ article }) => {
 //     },
 //   };
 // };
+// 빌드 후 데이터가 고정되어 변경 불가, (딱 한번만 실행됨.)
 export const getStaticProps = async (context) => {
-  const res = await fetch(
-    `https://jsonplaceholder.typicode.com/posts/${context.params.id}`
-  );
+  const res = await fetch(`${server}/api/articles/${context.params.id}`);
   const article = await res.json();
   return {
     props: {
@@ -42,8 +42,9 @@ export const getStaticProps = async (context) => {
 };
 // //  동적으로 데이터를 받아온다. 데이터가 홈에 6까지 있었지만 20을 검색할 경우
 // //해당 검색 결과의 id를 가져와 데이터를 보여주는 것이 가능
+// data에 기반해 pre-render할 동적 라우팅을 적어준다.
 export const getStaticPaths = async () => {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+  const res = await fetch(`${server}/api/articles`);
   const articles = await res.json();
   const ids = articles.map((article) => article.id);
   const paths = ids.map((id) => ({
