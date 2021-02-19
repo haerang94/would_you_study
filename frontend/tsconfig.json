@@ -19,7 +19,10 @@
       "target": "esnext",
       "baseUrl":".",
       "paths":{
-        "components/*":["components/*"]
+        "components/*":["components/*"],
+        "config/*":["config/*"],
+        "pages/*":["pages/*"],
+        "styles/*":["styles/*"]
       }
     },
     "exclude": ["node_modules"],

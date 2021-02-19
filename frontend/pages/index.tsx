@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Layout.module.css';
-import ArticleList from 'components/ArticleList';
+import ArticleList from 'components/Article/ArticleList';
 import { server } from '../config';
 
 export default function Home({ articles }) {
