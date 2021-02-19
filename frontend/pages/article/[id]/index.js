@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { server } from '../../../config';
+import { server } from 'config';
 import Meta from 'components/Meta';
 const Article = ({ article }) => {
   //   const router = useRouter();

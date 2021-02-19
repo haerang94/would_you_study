@@ -1,5 +1,5 @@
-import React from "react";
-import headerStyles from "../styles/Header.module.css";
+import React from 'react';
+import headerStyles from 'styles/Header.module.css';
 const Header = () => {
   const x = 2;
   return (
@@ -11,7 +11,7 @@ const Header = () => {
       <style jsx>
         {`
           .title {
-            color: ${x > 3 ? "red" : "blue"};
+            color: ${x > 3 ? 'red' : 'blue'};
           }
         `}
       </style>
