@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import articleStyles from "../styles/Article.module.css";
+import React from 'react';
+import Link from 'next/link';
+import articleStyles from './Article.module.css';
 const ArticleItem = ({ article }) => {
   return (
     <Link href="/article/[id]" as={`/article/${article.id}`}>
