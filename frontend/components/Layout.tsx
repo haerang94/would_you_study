@@ -1,6 +1,7 @@
 import React from 'react';
 import Meta from './Meta';
-const Layout = ({ children }) => {
+
+const Layout:React.FC = ({ children }) => {
   return (
     <>
       <Meta />
