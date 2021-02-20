@@ -3,9 +3,9 @@ import Head from 'next/head';
 
 export default function Home() {
   const [text, setText] = useState<string>('자바스크립트');
-  let a: string = 2;
+  let a: number = 2;
   setTimeout(() => {
-    setText(0);
+    setText("0");
     // setText("타입스크립트")
   }, 1000);
 
