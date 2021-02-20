@@ -9,15 +9,5 @@
           }
         }
       ]
-    ],
-    
-    "plugins":[ 
-      ["@emotion/babel-plugin"],
-    [
-      "emotion",
-      {
-       "autoLabel": true,
-       "labelFormat": "[dirname]-[filename]--[local]",
-      }
-    ]]
+    ]
   }
