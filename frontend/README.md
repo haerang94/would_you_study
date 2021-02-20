@@ -1,3 +1,12 @@
+_개인 프로젝트에서 사용하는 기술은 배우고 싶거나 현재 공부하고 있는 기술을 우선 적용합니다_ 
+
+### 적용 기술 
+- emotion
+- NextJs
+- Typescript
+- Rest api
+
+
 
 ### 폴더구조, 절대경로 설정
 - [tsconfig.json 절대 경로 설정과 폴더구조에 대한 고찰](https://haerang94.tistory.com/294)
