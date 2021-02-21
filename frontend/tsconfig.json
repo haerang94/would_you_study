@@ -23,7 +23,9 @@
       "components/*":["components/*"],
       "config/*":["config/*"],
       "pages/*":["pages/*"],
-      "styles/*":["styles/*"]
+      "styles/*":["styles/*"],
+      "images/*":["images/*"],
+      "data/*":["data/*"]
     }
    
   },

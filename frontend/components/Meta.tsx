@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-type MetaProps{
+type MetaProps={
   title:string,
   keywords:string,
   description:string

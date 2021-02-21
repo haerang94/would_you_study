@@ -1,17 +1,28 @@
 import React, { useState } from 'react';
-import Head from 'next/head';
+import styles from 'styles/Layout.module.css';
+import ArticleList from 'components/Article/ArticleList';
+import { server } from 'config';
 
-// import styles from 'styles/Layout.module.css';
-// import ArticleList from 'components/Article/ArticleList';
-// import { server } from 'config';
 
-// export default function Home({ articles }) {
-//   return (
-//     <div className={styles.container}>
-//       <ArticleList articles={articles} />
-//     </div>
-//   );
-// }
+type articleProps={
+    userId:number;
+    id:number;
+    title:string;
+    body:string;
+}
+
+type articlesProps={
+    articles:articleProps[];
+};
+
+
+export default function Home({ articles }:articlesProps) {
+  return (
+    <div className={styles.container}>
+      <ArticleList articles={articles} />
+    </div>
+  );
+}
 
 // export const getStaticProps = async () => {
 //   const res = await fetch(`${server}/api/articles`);
@@ -24,15 +35,15 @@ import Head from 'next/head';
 //   };
 // };
 
-// export const getStaticProps = async () => {
-//   const res = await fetch(
-//     `https://jsonplaceholder.typicode.com/posts?_limit=6`
-//   );
-//   const articles = await res.json();
+export const getStaticProps = async () => {
+  const res = await fetch(
+    `https://jsonplaceholder.typicode.com/posts?_limit=6`
+  );
+  const articles = await res.json();
 
-//   return {
-//     props: {
-//       articles,
-//     },
-//   };
-// };
+  return {
+    props: {
+      articles,
+    },
+  };
+};
