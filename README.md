@@ -1,7 +1,7 @@
 **개인 프로젝트에서 사용하는 기술은 배우고 싶거나 현재 공부하고 있는 기술을 우선 적용합니다**
 
 <p align="center">
-<img src="frontend/public/opening-demo.gif" width="450px" height="350px"/>
+<img src="frontend/public/opening-demo.gif" width="600px" height="350px"/>
 </p>
 
 이 프로젝트는
