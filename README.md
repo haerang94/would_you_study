@@ -1,5 +1,9 @@
 **개인 프로젝트에서 사용하는 기술은 배우고 싶거나 현재 공부하고 있는 기술을 우선 적용합니다**
 
+<p align="center">
+<img src="frontend/public/opening-demo.gif" width="450px" height="350px"/>
+</p>
+
 ### SKILLS
 - emotion (styled-components 위주로 사용했다가 사이즈도 작고 사용량이 늘고있는 emotion을 사용해보려고 적용했습니다.)
 - NextJs (SSR을 적용해보고 next자체에서 제공하는 라우팅 등의 기능을 사용해보려고 적용했습니다.)
