@@ -23,6 +23,7 @@ export const pStyle=css`
     font-size:20px;
     white-space:pre-wrap;
     text-align:center;
+    text-shadow:2px 2px 2px #0F0C29;
 `;
 
 export const imgStyle=css`
