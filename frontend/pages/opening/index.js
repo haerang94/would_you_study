@@ -8,14 +8,13 @@ const Opening = () => {
     useEffect(() => {
         
         return () => {
-            
-        }
+                    }
     }, [])
 
     return (
         <Container>
             <ImgBox>
-                <Image src={'/static/opening-1.png'} layout="fill" objectFit="cover"></Image>
+                <Image src={'/static/opening-1.png'} layout="fill" objectFit="cover" ></Image>
             </ImgBox>
             <FlexBox>
                 <Button>이전</Button>

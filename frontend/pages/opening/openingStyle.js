@@ -3,6 +3,16 @@ import styled from '@emotion/styled'
 
 export const backgroundStyle=css`
     background:#0F0C29;
+    background:linear-gradient(
+        to bottom,
+        #000,
+        #000,
+        #0F0C29,
+        #0F0C29, 
+        #181739,
+        #1E183D,
+        #321A3F
+      );
     font-family: 'BinggraeSamanco-Bold';
     color:#fff;
     
@@ -31,9 +41,10 @@ export const buttonStyle=css`
     color:#fff;
     width:80px;
     height:45px;
-    border-radius:20px;
+    border-radius:40px;
     &:hover{
         border:1px solid #fff;
+        cursor:pointer;
     }
 `;
 
@@ -47,7 +58,8 @@ export const Container=styled.main`
 
 export const ImgBox=styled.div`
     ${imgStyle};
-    position:relative; 
+    position:relative;
+
 `;
 
 export const FlexBox=styled.div`
