@@ -3,19 +3,13 @@ import styled from '@emotion/styled'
 
 export const backgroundStyle=css`
     background:#0F0D26;
-    @font-face {
-        font-family: 'BinggraeSamanco-Bold';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
     font-family: 'BinggraeSamanco-Bold';
     color:#fff;
     
 `;
 
 export const pStyle=css`
-    width:45%
+    width:70%
 `;
 
 export const imgStyle=css`
@@ -23,18 +17,43 @@ export const imgStyle=css`
     height:400px;
 `;
 
+export const defaultFlexStyle=css`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+`;
+
+export const buttonStyle=css`
+    font-size:20px;
+    background:none;
+    border:none;
+    color:#fff;
+    width:80px;
+    height:45px;
+    &:hover{
+        border-bottom:1px solid #fff;
+    }
+`;
+
 export const Container=styled.main`
-${backgroundStyle};
-height:100vh;
-width:100vw;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+    ${backgroundStyle};
+    ${defaultFlexStyle};
+    height:100vh;
+    width:100vw;
+    flex-direction:column;
 `;
 
 export const ImgBox=styled.div`
     ${imgStyle};
-    position:relative;
-    
+    position:relative; 
+`;
+
+export const FlexBox=styled.div`
+    ${defaultFlexStyle};
+    width:750px;
+    justify-content:space-between;
+`;
+
+export const Button=styled.button`
+    ${buttonStyle};
 `;
