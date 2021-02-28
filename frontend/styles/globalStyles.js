@@ -24,6 +24,7 @@ export const globalStyle=css`
     * {
     box-sizing: border-box;
     font-family: 'BinggraeSamanco-Bold';
+    outline:none;
     }
 
 `;
