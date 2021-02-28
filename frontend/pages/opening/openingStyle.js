@@ -22,11 +22,12 @@ export const pStyle=css`
     width:70%;
     font-size:20px;
     white-space:pre-wrap;
+    text-align:center;
 `;
 
 export const imgStyle=css`
     width:750px;
-    height:400px;
+    height:380px;
 `;
 
 export const defaultFlexStyle=css`
@@ -39,7 +40,7 @@ export const navStyle=css`
         min-height:80px;
         width:100vw;
         background:none;
-        padding:10px 0;
+        padding:10px;
 `;
 
 export const buttonStyle=css`
