@@ -21,6 +21,7 @@ export const backgroundStyle=css`
 export const pStyle=css`
     width:70%;
     font-size:20px;
+    white-space:pre-wrap;
 `;
 
 export const imgStyle=css`
