@@ -2,14 +2,15 @@ import { css,  keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
 
 export const backgroundStyle=css`
-    background:#0F0D26;
+    background:#0F0C29;
     font-family: 'BinggraeSamanco-Bold';
     color:#fff;
     
 `;
 
 export const pStyle=css`
-    width:70%
+    width:70%;
+    font-size:20px;
 `;
 
 export const imgStyle=css`
@@ -30,8 +31,9 @@ export const buttonStyle=css`
     color:#fff;
     width:80px;
     height:45px;
+    border-radius:20px;
     &:hover{
-        border-bottom:1px solid #fff;
+        border:1px solid #fff;
     }
 `;
 
