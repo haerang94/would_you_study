@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import {Container,ImgBox,FlexBox,pStyle,Button} from './openingStyle';
+import {Container,ImgBox,FlexBox,pStyle,Button,Nav} from './openingStyle';
 import {openingMent} from 'data/openingMent';
 import Image from 'next/image';
 
@@ -13,6 +13,9 @@ const Opening = () => {
 
     return (
         <Container>
+            <Nav>
+                <Image src={'/static/logo.png'} width={100} height={80}></Image>
+            </Nav>
             <ImgBox>
                 <Image src={'/static/opening-1.png'} layout="fill" objectFit="cover" ></Image>
             </ImgBox>

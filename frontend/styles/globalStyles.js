@@ -1,6 +1,7 @@
 import { css } from '@emotion/react'
-
+import emotionReset from 'emotion-reset';
 export const globalStyle=css`
+    ${emotionReset};
     @font-face {
         font-family: 'BinggraeSamanco-Bold';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff') format('woff');

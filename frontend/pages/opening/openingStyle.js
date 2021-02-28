@@ -34,6 +34,13 @@ export const defaultFlexStyle=css`
     align-items:center;
 `;
 
+export const navStyle=css`
+        min-height:80px;
+        width:100vw;
+        background:none;
+        padding:10px 0;
+`;
+
 export const buttonStyle=css`
     font-size:20px;
     background:none;
@@ -48,12 +55,17 @@ export const buttonStyle=css`
     }
 `;
 
+export const Nav=styled.nav`
+    ${navStyle};
+`;
+
 export const Container=styled.main`
     ${backgroundStyle};
     ${defaultFlexStyle};
     height:100vh;
     width:100vw;
     flex-direction:column;
+    justify-content:start;
 `;
 
 export const ImgBox=styled.div`
@@ -66,6 +78,7 @@ export const FlexBox=styled.div`
     ${defaultFlexStyle};
     width:750px;
     justify-content:space-between;
+    margin:20px 0;
 `;
 
 export const Button=styled.button`
