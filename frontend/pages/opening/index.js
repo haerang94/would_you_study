@@ -5,11 +5,21 @@ import Image from 'next/image';
 
 
 const Opening = () => {
+    const [page, setPage] = useState(0);
     useEffect(() => {
         
         return () => {
                     }
     }, [])
+
+    const prevBtn=()=>{
+        const prevPage=page-1;
+        setPage(prevPage<0?5:prevPage);
+    }
+
+    const nextBtn=()=>{
+        setPage((page+1)%6);
+    }
 
     return (
         <Container>
@@ -17,12 +27,12 @@ const Opening = () => {
                 <Image src={'/static/logo.png'} width={100} height={80}></Image>
             </Nav>
             <ImgBox>
-                <Image src={'/static/opening-1.png'} layout="fill" objectFit="contain" ></Image>
+                <Image src={`/static/opening-${page+1}.png`} layout="fill" objectFit="contain" ></Image>
             </ImgBox>
             <FlexBox>
-                <Button>이전</Button>
+                <Button onClick={prevBtn}>이전</Button>
                 <p css={pStyle}>{openingMent[0]}</p>
-                <Button>다음</Button>
+                <Button onClick={nextBtn}>다음</Button>
             </FlexBox>
         </Container>
     )
