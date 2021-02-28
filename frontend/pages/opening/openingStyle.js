@@ -55,6 +55,7 @@ export const buttonStyle=css`
     &:hover{
         border:1px solid #fff;
         cursor:pointer;
+        box-shadow:3px 3px 2px #0F0C29;
     }
 `;
 
