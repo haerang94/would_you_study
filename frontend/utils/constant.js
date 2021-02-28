@@ -1,0 +1,3 @@
+const  IMG_LIST_LENGTH=6;
+
+export {IMG_LIST_LENGTH};

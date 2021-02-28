@@ -52,6 +52,7 @@ export const buttonStyle=css`
     width:80px;
     height:45px;
     border-radius:40px;
+    text-shadow:2px 2px 2px #0F0C29;
     &:hover{
         border:1px solid #fff;
         cursor:pointer;
@@ -75,7 +76,6 @@ export const Container=styled.main`
 export const ImgBox=styled.div`
     ${imgStyle};
     position:relative;
-
 `;
 
 export const FlexBox=styled.div`
