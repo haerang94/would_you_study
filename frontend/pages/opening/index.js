@@ -2,14 +2,15 @@ import React from 'react'
 import * as styles from './openingStyle';
 import {openingMent} from 'data/openingMent';
 import Image from 'next/image';
-import one from './opening-1.png'
+
 
 const Opening = () => {
     return (
         <styles.Container>
-            <p>{openingMent[0]}</p> 
-            {/* <img src='static/opening-2.png'></img> */}
-            <Image src={one} layout="fill"></Image>
+            <styles.ImgBox>
+                <Image src={'/static/opening-1.png'} layout="fill" objectFit="contain"></Image>
+            </styles.ImgBox>
+            <p css={styles.pStyle}>{openingMent[0]}</p>
         </styles.Container>
     )
 }
