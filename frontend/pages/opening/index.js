@@ -17,7 +17,7 @@ const Opening = () => {
                 <Image src={'/static/logo.png'} width={100} height={80}></Image>
             </Nav>
             <ImgBox>
-                <Image src={'/static/opening-1.png'} layout="fill" objectFit="cover" ></Image>
+                <Image src={'/static/opening-1.png'} layout="fill" objectFit="contain" ></Image>
             </ImgBox>
             <FlexBox>
                 <Button>이전</Button>

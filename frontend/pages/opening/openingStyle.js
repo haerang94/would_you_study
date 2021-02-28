@@ -28,7 +28,7 @@ export const pStyle=css`
 
 export const imgStyle=css`
     width:750px;
-    height:380px;
+    height:400px;
 `;
 
 export const defaultFlexStyle=css`
