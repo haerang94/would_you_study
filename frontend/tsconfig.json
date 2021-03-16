@@ -25,7 +25,8 @@
       "pages/*":["pages/*"],
       "styles/*":["styles/*"],
       "images/*":["images/*"],
-      "data/*":["data/*"]
+      "data/*":["data/*"],
+      "utils/*":["utils/*"]
     }
    
   },

@@ -2,20 +2,28 @@ import { css,  keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
 
 export const backgroundStyle=css`
-    background:#0F0D26;
-    @font-face {
-        font-family: 'BinggraeSamanco-Bold';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
+    background:#0F0C29;
+    background:linear-gradient(
+        to bottom,
+        #000,
+        #000,
+        #0F0C29,
+        #0F0C29, 
+        #181739,
+        #1E183D,
+        #321A3F
+      );
     font-family: 'BinggraeSamanco-Bold';
     color:#fff;
     
 `;
 
 export const pStyle=css`
-    width:45%
+    width:70%;
+    font-size:20px;
+    white-space:pre-wrap;
+    text-align:center;
+    text-shadow:2px 2px 2px #0F0C29;
 `;
 
 export const imgStyle=css`
@@ -23,18 +31,60 @@ export const imgStyle=css`
     height:400px;
 `;
 
+export const defaultFlexStyle=css`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+`;
+
+export const navStyle=css`
+        min-height:80px;
+        width:100vw;
+        background:none;
+        padding:10px;
+`;
+
+export const buttonStyle=css`
+    font-size:20px;
+    background:none;
+    border:none;
+    color:#fff;
+    width:80px;
+    height:45px;
+    border-radius:40px;
+    text-shadow:2px 2px 2px #0F0C29;
+    &:hover{
+        border:1px solid #fff;
+        cursor:pointer;
+        box-shadow:3px 3px 2px #0F0C29;
+    }
+`;
+
+export const Nav=styled.nav`
+    ${navStyle};
+`;
+
 export const Container=styled.main`
-${backgroundStyle};
-height:100vh;
-width:100vw;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+    ${backgroundStyle};
+    ${defaultFlexStyle};
+    height:100vh;
+    width:100vw;
+    flex-direction:column;
+    justify-content:start;
 `;
 
 export const ImgBox=styled.div`
     ${imgStyle};
     position:relative;
-    
+`;
+
+export const FlexBox=styled.div`
+    ${defaultFlexStyle};
+    width:750px;
+    justify-content:space-between;
+    margin:20px 0;
+`;
+
+export const Button=styled.button`
+    ${buttonStyle};
 `;
