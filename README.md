@@ -21,6 +21,13 @@
 프론트엔드와 백엔드를 같이 개발하므로 장기 프로젝트로 생각하고 있습니다.
 현재 교육을 받고 있는 싸피에서 공부하는 시간 외에 리액트 및 관련 기술들을 공부하고 적용하면서 개발하는 프로젝트입니다.
 
+### 현재 기획 & 디자인 진행 정도
+- figma: [farm project](https://www.figma.com/file/Xbg3jRNX5lo7HNvuIb1Ebu/farm-project?node-id=66%3A388)
+<p float="left">
+    <img src="frontend/public/introduce/메인페이지.png" width="300px" alt="메인페이지"/>
+    <img src="frontend/public/introduce/게임화면.png" width="300px" alt="게임화면"/>
+    <img src="frontend/public/introduce/오프닝페이지.png" width="300px" alt="오프닝페이지"/>
+</p>
 
 ### SKILLS
 - emotion (styled-components 위주로 사용했다가 사이즈도 작고 사용량이 늘고있는 emotion을 사용해보려고 적용했습니다.)
