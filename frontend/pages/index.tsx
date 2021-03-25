@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import styles from 'styles/Layout.module.css';
 import ArticleList from 'components/Article/ArticleList';
 import Layout from 'components/Layout';
 import { server } from 'config';

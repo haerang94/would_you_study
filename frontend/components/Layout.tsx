@@ -1,7 +1,7 @@
 import React from 'react';
 import Meta from './Meta';
 import Header from 'components/Header/Header';
-
+import Footer from 'components/Footer/Footer'
 const Layout:React.FC = ({ children }) => {
   return (
     <>
@@ -10,6 +10,7 @@ const Layout:React.FC = ({ children }) => {
       <div>
         <main>{children}</main>
       </div>
+      <Footer/>
     </>
   );
 };
