@@ -8,13 +8,6 @@ const Header = () => {
         <span>webdev</span> news
       </h1>
       <p className={headerStyles.description}>Keep up to date with web dev</p>
-      <style jsx>
-        {`
-          .title {
-            color: ${x > 3 ? 'red' : 'blue'};
-          }
-        `}
-      </style>
     </div>
   );
 };
