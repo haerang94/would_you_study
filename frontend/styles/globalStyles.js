@@ -1,18 +1,16 @@
 import { css } from '@emotion/react'
 import emotionReset from 'emotion-reset';
 export const globalStyle=css`
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Almendra&family=Montserrat:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Almendra&family=Montserrat:wght@400;700&family=Nanum+Gothic&display=swap');
     ${emotionReset};
-    @font-face {
-        font-family: 'BinggraeSamanco-Bold';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
+    
     html,
     body {
     padding: 0;
     margin: 0;
-    font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    font-family:'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     }
 
@@ -23,7 +21,7 @@ export const globalStyle=css`
 
     * {
     box-sizing: border-box;
-    font-family: 'BinggraeSamanco-Bold';
+    font-family:'Montserrat';
     outline:none;
     }
 

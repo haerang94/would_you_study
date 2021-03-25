@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import styles from 'styles/Layout.module.css';
 import ArticleList from 'components/Article/ArticleList';
+import Layout from 'components/Layout';
 import { server } from 'config';
 
 
@@ -18,8 +18,10 @@ type articlesProps={
 
 export default function Home({ articles }:articlesProps) {
   return (
-    <div className={styles.container}>
-      <ArticleList articles={articles} />
+    <div>
+      <Layout>
+        <ArticleList articles={articles} /> 
+      </Layout>
     </div>
   );
 }
