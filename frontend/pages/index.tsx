@@ -19,7 +19,7 @@ type articlesProps={
 
 export default function Home({ articles }:articlesProps) {
   return (
-    <div className={styles.container}>
+    <div>
       <Layout>
         <ArticleList articles={articles} /> 
       </Layout>
